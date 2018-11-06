@@ -6,6 +6,10 @@ import ButtonSubmit from '../components/ui/buttonSubmit'
 import Application1 from '../images/application-1.png'
 import Application2 from '../images/application-2.png'
 import Application3 from '../images/application-3.png'
+import Product1 from '../images/product-1.png'
+import Product2 from '../images/product-2.png'
+import Product3 from '../images/product-3.png'
+import HeatsFile from '../assets/Heats Product Information.pdf'
 import '../styles/pages/index.scss'
 
 const applicationsItems = [
@@ -14,20 +18,27 @@ const applicationsItems = [
   {"title": "Heat & Eat", "image": Application3, "description": "H°EATS' proprietary compound and packaging can be used to heat up any individual retail product on the spot, and keep it hot for up to 2 hours."}
 ]
 
+const productItems = [
+  {"name": "H’eats Half Pan tray", "image": Product1, "price": "$6.50" },
+  {"name": "H’eats Round tray", "image": Product2, "price": "$6.50"},
+  {"name": "Chafer Addapter, Half Pan", "image": Product3, "price": "$29.50"}
+]
+
 const IndexPage = () => (
   <Layout>
     <div className="main-container">
       <div name="home" className="title-container">
         <span>Introducing H°EATS</span>
-        <h1>Kitchen fresh quality, 2 hours after it leaves the kitchen</h1>
+        <h1>Kitchen fresh quality,<br />2 hours after it leaves the kitchen</h1>
         <p>Smart. Safe. Simple. A Revolution in Flame-Free Heating.</p>
         <div className="btn-container">
-          <Button
-            label="Download our product info"
-          />
+          <a href={HeatsFile} download className="btn">
+            Download our product info
+          </a>
         </div>
       </div>
       <div name="application" className="applications section">
+        <h2>Applications</h2>
         {
           applicationsItems.map((item, index) => (
             <div className={`application-item 
@@ -45,23 +56,26 @@ const IndexPage = () => (
         <h2>Products lorem ipsum dolor</h2>
         <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud.</p>
         <div className="inline-content">
-          
+          {
+            productItems.map((item, index) => (
+              <div className="product-box" key={index}>
+                <img src={item.image} alt="product" />
+                <span>{item.name}</span>
+                <strong>{item.price}</strong>
+              </div>
+            ))
+          }
         </div>
       </div>
       <div name="about" className="about section">
-        <h2>About</h2>
-        <p>Being in foodservice for over 30 years, keeping “hot food hot” in delivery, catering and remote operations was an on-going frustration.  Most solutions were expensive or dangerous and relied on power, flame or caustic materials.  
-          Unable to control the heat, food quality suffered and safety risks rose.  We continued to throw labor at the problem, trying to manage transport and set-up to compensate for the quality control we couldn’t get with canned fuel or equipment.   With guests and clients demanding hot food in a growing number of mobile, delivered and remote formats, we were losing even more control over final quality.  The need for better, smarter heating and holding solutions, well.. heated up fast.
-          We decided to re-think how we heat food, keep it kitchen-fresh and make it mobile to keep pace with today’s operations and culinary demands. After some deep exploration into exothermic heat science, we developed a way to create instant spot heat that was safe – but also controllable - and that could go the distance during service periods. 
-          We are excited to introduce H°EATS, the only flame-free heat source made from natural minerals and plant-based materials. H°EATS can be engineered to particular heat curve needs for heat & eat, or heat & hold.   Powered by Lava Gel, a patented technology proven in the beauty and spa industry for over a decade, our group is adapting the Lava Gel technology for use in foodservice and retail food industries worldwide.  
-          Our first products are aimed at foodservice operators and deliver 2 hours of hold time and keep quality kitchen-fresh throughout.  Other foodservice heat & hold products and retail heat & eat packaging are in development.
-          Together, H°EATS and Lava Gel can transform the way we enjoy “hot food hot” by unplugging, elevating and mobilizing heated food and beverage experiences.   We’re working closely with chefs, operators and chains using H°EATS products to improve and develop new  powered by Lava Gel products that safer, smarter and better.  
-          Join our H°EATS advisory forum…. (link to email inquiry)</p>
+        <h2>Our Story</h2>
+        <p>Being in foodservice for over 30 years, keeping “hot food hot” in delivery, catering and remote operations was an on-going frustration. Most solutions were expensive or dangerous and relied on power, flame or caustic materials.
+        We decided to re-think how we heat food, keep it kitchen-fresh and make it mobile to keep pace with today’s operations and culinary demands. After some deep exploration into exothermic heat science, we developed a way to create instant spot heat that was safe – but also controllable - and that could go the distance during service periods.
+        We are excited to introduce H°EATS, the only flame-free heat source made from natural minerals and plant-based materials.  Our first products are aimed at foodservice operators and deliver 2 hours of hold time and keep quality kitchen-fresh throughout. Other foodservice heat & hold products and retail heat & eat packaging are in development.</p>
       </div>
       <div name="contact" className="contact section">
         <h2>Contact Us</h2>
-        <p>Consectetur adipiscing elit, sed do eiusmod tempor <br /> 
-          incididunt ut labore et dolore magna aliqua.</p>
+        <p>We're here to answer questions, solve complex <br /> problems, and spark new ideas. Drop us a line.</p>
         <form action="https://h-eats.us19.list-manage.com/subscribe/post?u=5e0f15b72e1100694a5ea9f1e&amp;id=07cafaff08" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
           <div className="contact-form">
             <input id="mce-EMAIL" type="email" name="EMAIL" type="text" placeholder="Enter email address" required/>

@@ -18,9 +18,12 @@ const Footer = () => (
       </div>
       <div className="info-box">
         <MailIcon />
-        <a href="mailto:buy@h-eats.com">buy@h-eats.com</a>  
-        <a href="mailto:learn@h-eats.com">learn@h-eats.com</a>       
-        <a href="mailto:press@h-eats.com">press@h-eats.com</a>                    
+        <div>
+          <a href="mailto:orders@h-eats.com">Orders</a>  
+          <a href="mailto:learn@h-eats.com">Learn</a>       
+          <a href="mailto:press@h-eats.com">Press</a><br />
+        </div>
+        <span className="inquiries">Inquiries</span>                  
       </div>
       <div className="info-box">
         <PhoneIcon />

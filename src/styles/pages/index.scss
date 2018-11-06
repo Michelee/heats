@@ -20,7 +20,7 @@
     background-position: center;
     background-image: linear-gradient(rgba(7, 7, 7, 0.2), rgba(0, 1, 2, 0.3)), url("../../images/heats-bg.jpg");
     margin-top: -82px;
-    padding: calc(10em + 82px) 7em 10em;
+    padding: calc(8em + 82px) 7em 10em;
 
     .btn-container {
       width: 100%;
@@ -33,27 +33,32 @@
     }
 
     p {
-      max-width: 700px;
+      max-width: 900px;
+      font-size: 28px;
       margin: 0 auto;
     }
 
     h1 {
       font-size: 55px;
       max-width: 900px;
-      margin: 0 auto;
+      margin: 0.3em auto 1em;
     }
   }
 
   .section {
-    padding: calc(4em + 82px) 7em 4em;
+    padding: calc(1em + 82px) 7em 4em;
   }
 
   .applications {
+    h2 {
+      color: #6D6E71;
+      text-align: center;
+      margin-bottom: 0.8em;
+    }
     .application-item {
       max-width: 920px;
       margin: 0 auto;
       display: flex;
-
       &.inverse {
         flex-direction: row-reverse;
 
@@ -101,6 +106,10 @@
       border-radius: 0.2em;
       border: 1px solid #BEBFC1;
     }
+
+    .contact-form {
+      margin-top: 2em;
+    }
   }
 
   .product {
@@ -117,11 +126,36 @@
       max-width: 900px;
       margin: 0 auto;
     }
+
+    .inline-content {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      margin-top: 1.5em;
+      color: #6D6E71;
+      font-size: 24px;
+      line-height: 32px;
+
+      .product-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 1em;
+
+        span {
+          font-weight: 300;
+        }
+      }
+    }
   }
 
   .about {
     text-align: center;
     background-color: #ECECEC;
-  }
 
+    p {
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+  }
 }

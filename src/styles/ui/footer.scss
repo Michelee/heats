@@ -42,19 +42,24 @@
       background: rgba(152, 54, 32, 0.5);
       padding: 1em 0;
       border-radius: 0.3em;
-      line-height: initial;
-      min-height: 172px;
-      justify-content: center;
+      justify-content: flex-start;
+      min-height: 145px;
 
-      span, a {
+      span, a, div {
         margin-top: 1em;
         text-align: center;
         text-transform: uppercase;
         color: white;
       }
 
+      span.inquiries {
+        margin-top: 0;
+      }
+
       a {
+        margin: 0 8px;
         text-decoration: none;
+        font-weight: bold;
         &:hover {
           text-decoration: underline;
         }
