@@ -1,0 +1,64 @@
+.footer-container {
+  background-color: #F26522;
+  font-size: 14px;
+  font-weight: 300;
+  color: white;
+
+  .lavagel-icon {
+    width: 200px;
+    height: auto;
+  }
+
+  .footer-content {
+    padding: 2em 7em;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .social-media-icons {
+    svg {
+      margin: 0 8px;
+    }
+  }
+
+  hr {
+    margin-bottom: 0;
+    background: white;
+    margin: 0 3em;
+  }
+
+  .info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .info-box {
+      margin: 5em 2em;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: rgba(152, 54, 32, 0.5);
+      padding: 1em 0;
+      border-radius: 0.3em;
+      line-height: initial;
+      min-height: 172px;
+      justify-content: center;
+
+      span, a {
+        margin-top: 1em;
+        text-align: center;
+        text-transform: uppercase;
+        color: white;
+      }
+
+      a {
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.slick-slider {
+  margin: 0 auto;
+}
+
+.slick-slide {
+  width: 100%;
+  max-height: 700px;
+  position: relative;
+  color: white;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-next {
+  right: 50px !important;
+}
+
+.slick-prev {
+  z-index: 1;
+  left: 50px !important;
+}
+
+.slick-slide span {
+  position: absolute;
+  padding: 50px 15px 15px;
+}
+
+.carousel-text {
+  width: 100%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-slide span.place {
+  top: 37%;
+  font-size: 55px;
+  font-weight: bold;
+  text-transform: capitalize;
+  line-height: initial;
+  max-width: 80%;
+}
