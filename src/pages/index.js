@@ -1,7 +1,6 @@
 import React from 'react'
 
 import Layout from '../components/ui/layout'
-import Button from '../components/ui/button'
 import ButtonSubmit from '../components/ui/buttonSubmit'
 import Application1 from '../images/application-1.png'
 import Application2 from '../images/application-2.png'
