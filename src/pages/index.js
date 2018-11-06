@@ -9,7 +9,6 @@ import Product1 from '../images/product-1.jpg'
 import Product2 from '../images/product-2.jpg'
 import Product3 from '../images/product-3.jpg'
 import HeatsFile from '../assets/Heats Product Information.pdf'
-import OurStoryImg from '../images/our-story.png'
 import '../styles/pages/index.scss'
 
 const applicationsItems = [
@@ -68,12 +67,9 @@ const IndexPage = () => (
       </div>
       <div name="about" className="about section">
         <h2>Our Story</h2>
-        <div className="inline-content">
-          <img src={OurStoryImg} alt="our-story" />
-          <p>Being in foodservice for over 30 years, keeping “hot food hot” in delivery, catering and remote operations was an on-going frustration. Most solutions were expensive or dangerous and relied on power, flame or caustic materials.
+        <p>Being in foodservice for over 30 years, keeping “hot food hot” in delivery, catering and remote operations was an on-going frustration. Most solutions were expensive or dangerous and relied on power, flame or caustic materials.
           We decided to re-think how we heat food, keep it kitchen-fresh and make it mobile to keep pace with today’s operations and culinary demands. After some deep exploration into exothermic heat science, we developed a way to create instant spot heat that was safe – but also controllable - and that could go the distance during service periods.
           We are excited to introduce H°EATS, the only flame-free heat source made from natural minerals and plant-based materials.  Our first products are aimed at foodservice operators and deliver 2 hours of hold time and keep quality kitchen-fresh throughout. Other foodservice heat & hold products and retail heat & eat packaging are in development.</p>
-        </div>
       </div>
       <div name="contact" className="contact section">
         <h2>Contact Us</h2>
