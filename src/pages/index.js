@@ -2,6 +2,7 @@ import React from 'react'
 
 import Layout from '../components/ui/layout'
 import Button from '../components/ui/button'
+import ButtonSubmit from '../components/ui/buttonSubmit'
 import Application1 from '../images/application-1.png'
 import Application2 from '../images/application-2.png'
 import Application3 from '../images/application-3.png'
@@ -61,12 +62,17 @@ const IndexPage = () => (
         <h2>Contact Us</h2>
         <p>Consectetur adipiscing elit, sed do eiusmod tempor <br /> 
           incididunt ut labore et dolore magna aliqua.</p>
-        <div className="contact-form">
-          <input type="text" placeholder="Enter email address" />
-          <Button 
-            label="Subscribe"
-          />
-        </div>
+        <form action="https://h-eats.us19.list-manage.com/subscribe/post?u=5e0f15b72e1100694a5ea9f1e&amp;id=07cafaff08" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
+          <div className="contact-form">
+            <input id="mce-EMAIL" type="email" name="EMAIL" type="text" placeholder="Enter email address" required/>
+            <ButtonSubmit 
+              label="Subscribe"
+            />
+          </div>
+          <div style={{'position': 'absolute', 'left': '-5000px'}} aria-hidden="true">
+            <input type="text" name="b_5e0f15b72e1100694a5ea9f1e_07cafaff08" tabindex="-1" value="" />
+          </div>
+        </form>
       </div>
     </div>
   </Layout>
