@@ -53,8 +53,7 @@ const IndexPage = () => (
         }
       </div>
       <div name="product" className="product section">
-        <h2>Products lorem ipsum dolor</h2>
-        <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud.</p>
+        <h2>Products</h2>
         <div className="inline-content">
           {
             productItems.map((item, index) => (
