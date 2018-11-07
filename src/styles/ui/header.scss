@@ -1,3 +1,5 @@
+$break-small: 479px;
+$break-mid: 870px;
 
 .header-container {
   background-color: #FFF;
@@ -9,12 +11,21 @@
   box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.15);
 
   .header-content {
+    position: relative;
     margin: 0 7em;
     padding: 0.5em 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: white;
+
+    @media screen and (max-width: $break-mid) {
+      margin: 0;
+    }
+
+    @media screen and (max-width: $break-mid) {
+      flex-direction: column;
+    }
   }
 
   .lavagel-icon {
@@ -26,6 +37,24 @@
     cursor: pointer;
   }
 
+  .menu {
+    @media screen and (max-width: $break-mid) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: white;
+      width: 100%;
+    }
+
+    @media screen and (max-width: $break-mid) {
+      display: none;
+      
+      &.show {
+        display: flex;
+      }
+    }
+  }
+
   .menu a {
     text-decoration: none;
     margin-left: 16px;
@@ -34,10 +63,25 @@
     letter-spacing: 0.1em;
     font-weight: 300;
     color: #939598;
-
+    
     &.active {
       color: #F26522;
       font-weight: bold;
+    }
+  }
+
+  .icon {
+    display: none;
+    position: absolute;
+    top: 27px;
+    right: 20px;
+    fill {
+      color: black;
+    }
+
+    @media screen and (max-width: $break-mid) {
+      display: block;
+      color: black;
     }
   }
 }

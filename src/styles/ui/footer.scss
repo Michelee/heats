@@ -1,3 +1,6 @@
+$break-small: 479px;
+$break-mid: 768px;
+
 .footer-container {
   background-color: #F26522;
   font-size: 14px;
@@ -14,11 +17,27 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+
+    @media screen and (max-width: $break-small) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    svg {
+      @media screen and (max-width: $break-small) {
+        margin-bottom: 20px;
+      }
+    }
   }
 
   .social-media-icons {
     svg {
       margin: 0 8px;
+    }
+
+    @media screen and (max-width: $break-small) {
+      margin-bottom: 10px;
     }
   }
 
@@ -32,6 +51,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media screen and (max-width: $break-small) {
+      flex-direction: column;
+    }
     
     .info-box {
       margin: 5em 2em;
@@ -44,6 +67,11 @@
       border-radius: 0.3em;
       justify-content: flex-start;
       min-height: 171px;
+
+      @media screen and (max-width: $break-small) {
+        flex-direction: column;
+        margin: 2em 2em;
+      }
 
       &:nth-child(2) {
         svg {

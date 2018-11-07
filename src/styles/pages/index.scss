@@ -1,3 +1,7 @@
+$break-small: 479px;
+$break-mid: 768px;
+$break-lg: 1024px;
+
 .main-container {
   p {
     font-weight: 300;
@@ -21,56 +25,132 @@
     background-image: linear-gradient(rgba(7, 7, 7, 0.2), rgba(0, 1, 2, 0.3)), url("../../images/heats-bg.jpg");
     margin-top: -82px;
     padding: calc(8em + 82px) 7em 10em;
+    @media screen and (max-width: $break-mid) {
+      padding: calc(8em + 82px) 2em 10em;
+    }
 
     .btn-container {
       width: 100%;
       margin: 4em auto 0;
+
+      @media screen and (max-width: $break-mid) {
+        a {
+          font-size: 14px;
+        }
+      }
     }
 
     span {
       text-transform: uppercase;
       font-size: 30px;
+
+      @media screen and (max-width: $break-mid) {
+        font-size: 20px;
+      }
+
+      @media screen and (max-width: $break-small) {
+        font-size: 16px;
+      }
     }
 
     p {
       max-width: 900px;
       font-size: 28px;
       margin: 0 auto;
+      @media screen and (max-width: $break-mid) {
+        font-size: 16px;
+      }
+
+      @media screen and (max-width: $break-small) {
+        font-size: 12px;
+      }
     }
 
     h1 {
       font-size: 55px;
       max-width: 900px;
       margin: 0.3em auto 1em;
+
+      @media screen and (max-width: $break-mid) {
+        font-size: 40px;
+      }
+
+      @media screen and (max-width: $break-small) {
+        font-size: 25px;
+      }
+
+      
     }
   }
 
   .section {
     padding: calc(1em + 82px) 7em 4em;
+
+    @media screen and (max-width: $break-mid) {
+      padding: calc(1em + 82px) 4em 4em;
+    }
+
+    @media screen and (max-width: $break-small) {
+      padding: calc(1em + 82px) 2em 4em;
+    }
   }
+
+  
 
   .applications {
     h2 {
       color: #6D6E71;
       text-align: center;
       margin-bottom: 0.8em;
+
+
+      @media screen and (max-width: $break-mid) {
+        font-size: 40px;
+      }
+
+      @media screen and (max-width: $break-small) {
+        font-size: 25px;
+      }
+      
     }
     .application-item {
       max-width: 920px;
       margin: 0 auto;
       display: flex;
+
+      @media screen and (max-width: $break-mid) {
+        width: 100%;
+        flex-direction: column;
+      }
+
       &.inverse {
         flex-direction: row-reverse;
+
+        @media screen and (max-width: $break-mid) {
+          flex-direction: column;
+        }
 
         .application-info {
           text-align: right;
           align-items: flex-end;
+    
+          @media screen and (max-width: $break-mid) {
+            align-items: flex-start;
+            text-align: left;
+          }
         }
       }
     }
 
     img {
       margin-bottom: 0;
+      @media screen and (max-width: $break-lg) {
+        width: 50%;
+      }
+
+      @media screen and (max-width: $break-mid) {
+        width: 100%;
+      }
     }
 
     .application-info {
@@ -81,6 +161,14 @@
       align-items: flex-start;
       flex-direction: column;
       justify-content: center;
+
+      @media screen and (max-width: $break-lg) {
+        flex-grow: 0.5;
+      }
+
+      @media screen and (max-width: $break-mid) {
+        max-width: 100%;
+      }
 
       h3 {
         color: #FEC66A;
@@ -98,6 +186,27 @@
 
   .contact {
     text-align: center;
+
+    h2 {
+      @media screen and (max-width: $break-mid) {
+        font-size: 40px;
+      }
+
+      @media screen and (max-width: $break-small) {
+        font-size: 25px;
+      }
+    }
+
+    p {
+      @media screen and (max-width: $break-mid) {
+        font-size: 16px;
+      }
+
+      @media screen and (max-width: $break-small) {
+        font-size: 12px;
+      }
+    }
+
     input {
       outline: 0;
       padding: 0.7em;
@@ -105,10 +214,20 @@
       margin-right: 0.5em;
       border-radius: 0.2em;
       border: 1px solid #BEBFC1;
+
+      @media screen and (max-width: $break-mid) {
+        width: 85%;
+        margin: 0 auto;
+      }
     }
 
     .contact-form {
       margin-top: 2em;
+
+      @media screen and (max-width: $break-mid) {
+        display: flex;
+        justify-content: space-between;
+      }
     }
   }
 
@@ -116,15 +235,43 @@
     padding-top: calc(1em + 80px);
     text-align: center;
 
+    &.section {
+      @media screen and (max-width: $break-mid) {
+        padding: calc(1em + 82px) 4em 4em;
+        padding-top: 1em;
+      }
+
+      @media screen and (max-width: $break-small) {
+        padding: calc(1em + 82px) 2em 4em;
+        padding-top: 1em;
+      }
+    }
+
     h2 {
       color: #6D6E71;
       font-size: 48px;
+
+      @media screen and (max-width: $break-mid) {
+        font-size: 40px;
+      }
+
+      @media screen and (max-width: $break-small) {
+        font-size: 25px;
+      }
     }
 
     p {
       color: #939598;
       max-width: 900px;
       margin: 0 auto;
+
+      @media screen and (max-width: $break-mid) {
+        font-size: 16px;
+      }
+
+      @media screen and (max-width: $break-small) {
+        font-size: 12px;
+      }
     }
 
     .inline-content {
@@ -136,14 +283,33 @@
       font-size: 24px;
       line-height: 32px;
 
+      @media screen and (max-width: $break-mid) {
+        flex-direction: column;
+        align-items: center;
+        font-size: 16px;
+      }
+
+      @media screen and (max-width: $break-small) {
+        font-size: 12px;
+      }
+
       .product-box {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 0 1em;
 
+        @media screen and (max-width: $break-mid) {
+          img {
+            margin-bottom: 0;
+          }
+        }
+
         span {
           font-weight: 300;
+          @media screen and (max-width: $break-mid) {
+            margin-bottom: 20px;
+          }
         }
       }
     }
@@ -153,9 +319,26 @@
     text-align: center;
     background-color: #ECECEC;
 
+    h2 {
+      @media screen and (max-width: $break-mid) {
+        font-size: 40px;
+      }
+
+      @media screen and (max-width: $break-small) {
+        font-size: 25px;
+      }
+    }
+
     p {
-      max-width: 1200px;
       text-align: center;
+
+      @media screen and (max-width: $break-mid) {
+        font-size: 16px;
+      }
+
+      @media screen and (max-width: $break-small) {
+        font-size: 12px;
+      }
     }
 
     img {
