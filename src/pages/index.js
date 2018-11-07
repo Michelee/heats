@@ -60,7 +60,6 @@ const IndexPage = () => (
               <div className="product-box" key={index}>
                 <img src={item.image} alt="product" />
                 <span>{item.name}</span>
-                <strong>{item.price}</strong>
               </div>
             ))
           }
