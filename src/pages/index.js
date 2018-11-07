@@ -18,9 +18,9 @@ const applicationsItems = [
 ]
 
 const productItems = [
-  {"name": "H’eats Half Pan tray", "image": Product1, "price": "$6.50" },
-  {"name": "H’eats Round tray", "image": Product2, "price": "$6.50"},
-  {"name": "Chafer Addapter, Half Pan", "image": Product3, "price": "$29.50"}
+  {"name": "H°EATS Half Pan Tray", "image": Product1, "price": "$6.50" },
+  {"name": "H°EATS Round Tray", "image": Product2, "price": "$6.50"},
+  {"name": "H°EATS Chaffer Adapter", "image": Product3, "price": "$29.50"}
 ]
 
 const IndexPage = () => (
@@ -53,6 +53,7 @@ const IndexPage = () => (
       </div>
       <div name="product" className="product section">
         <h2>Products</h2>
+        <p>Flame-free heating solutions perfect for both catering and drop-off delivery.</p>
         <div className="inline-content">
           {
             productItems.map((item, index) => (
