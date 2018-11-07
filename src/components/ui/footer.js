@@ -24,7 +24,7 @@ const Footer = () => (
       </div>
       <div className="info-box">
         <PhoneIcon />
-        <span>704.488.7255</span>
+        <span>702-703-2093</span>
       </div>
     </div>
     <hr />

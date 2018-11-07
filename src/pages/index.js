@@ -13,14 +13,14 @@ import '../styles/pages/index.scss'
 
 const applicationsItems = [
   {"title": "Catering", "image": Application1, "description": "Patented “heat curve” keeps food at 150° without continuing to cook. Maintains kitchen fresh quality and texture for up to 2 hours." },
-  {"title": "Drop-Off Delivery", "image": Application2, "description": "H°EATS enables consumers to enjoy a hot, quality restaurant meal from the comfort of their own home."},
-  {"title": "Heat & Eat", "image": Application3, "description": "H°EATS' proprietary compound and packaging can be used to heat up any individual retail product on the spot, and keep it hot for up to 2 hours."}
+  {"title": "Delivery", "image": Application2, "description": "H°EATS powered by Lava Gel enables guests to enjoy a hot, quality restaurant meal from the comfort of their own home."},
+  {"title": "Heat & Eat", "image": Application3, "description": "H°EATS proprietary compound and packaging can be used to heat up individual retail products on the spot, and keep it hot for up to 2 hours."}
 ]
 
 const productItems = [
   {"name": "H°EATS Half Pan Tray", "image": Product1, "price": "$6.50" },
   {"name": "H°EATS Round Tray", "image": Product2, "price": "$6.50"},
-  {"name": "H°EATS Chaffer Adapter", "image": Product3, "price": "$29.50"}
+  {"name": "H°EATS Chafer Adapter", "image": Product3, "price": "$29.50"}
 ]
 
 const IndexPage = () => (
