@@ -4,8 +4,7 @@ import MailIcon from '../icons/mail-icon'
 import PlaceIcon from '../icons/place-icon'
 import LogoIcon from '../icons/heats-white-logo'
 import TwitterIcon from '../icons/twitter-icon'
-import FacebookIcon from '../icons/facebook-icon'
-import InstagramIcon from '../icons/instagram-icon'
+import LinkedinIcon from '../icons/linkedin-icon'
 
 import '../../styles/ui/footer.scss'
 
@@ -31,9 +30,8 @@ const Footer = () => (
     <div className="footer-content section">
       <LogoIcon />
       <div className="social-media-icons">
-        <TwitterIcon />
-        <FacebookIcon />
-        <InstagramIcon />
+        <a href="https://twitter.com/h_eats"><TwitterIcon /></a>
+        <a href="https://www.linkedin.com/company/h-eats"><LinkedinIcon /></a>
       </div>
       <span>Copyright 2018. All Rights Reserved</span>
     </div>
